@@ -30,7 +30,7 @@ chimera.vsearch(fasta=current, name=current, group=current, dereplicate=f)
 remove.seqs(fasta=current, accnos=current, group=current, name=current, dups=t)
 summary.seqs(fasta=current, name=current)
 #pre.cluster with uniose as implemented in mothur to remove PCR errors - results are Single variants
-pre.cluster(fasta=current, count=current, diffs=1, method=unoise)
+pre.cluster(fasta=current,  name=current, group=current, diffs=1, method=unoise)
 #inflate the count file - be sure mothur is picking the precluster.count file
 count.seqs(count=current, compress=f)
 #degap sequences fromt the precluster originated fasta, and classify them using the PR2 database trimmed to V4
